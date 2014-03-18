@@ -2,6 +2,7 @@
 <html>
   <head>
     <!-- include scripts -->
+    <link rel="stylesheet" type="text/css" href="./stylesheets/chat_style.css">
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="socket.io/socket.io.js"></script>
@@ -11,17 +12,27 @@
   </head>
 
   <body>
+
     <h1>My Chat App</h1>
 
-    <h3>Chat Message Board</h3>
-    <div id="messages-board"></div>
+      <div class="left-float">
+        <h3>Chat Message Board</h3>
+        <div id="messages-board"></div>
 
-    <form action="" method="get" accept-charset="utf-8" id="chat-form">
-      <label for="chatbox">ChatBox</label>
-      <input type="text" name="chatbox" value="" id="chatbox">
+        <form action="" method="get" accept-charset="utf-8" id="chat-form">
+          <label for="chatbox">ChatBox</label>
+          <input type="text" name="chatbox" value="" id="chatbox">
+          <p><input type="submit" value="Continue &rarr;"></p>
+        </form>
 
+        <div id="username"></div>
+        <div id="current-room"></div>
+      </div>
 
-      <p><input type="submit" value="Continue &rarr;"></p>
-    </form>
+      <div class="right-float">
+        <h2>Room Members</h2>
+        <ul id="room-members"></ul>
+      </div>
+
   </body>
 </html>
