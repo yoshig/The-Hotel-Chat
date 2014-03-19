@@ -1,9 +1,88 @@
-.left-float {
-  float: left;
-  border: black;
+body {
+  background-color: lightgreen;
 }
 
-.right-float {
-  float: right;
+.left-float {
+  margin-left: 50px;
+}
 
+#messages-board {
+  height: 300px;
+  width: 600px;
+  background-color: lightgrey;
+  border-style: inset;
+  border-width: 2px;
+  padding: 20px;
+  overflow:auto;
+}
+
+.nickname {
+  color: green;
+}
+
+#chat-form {
+  margin-top: 20px;
+}
+
+.chat-btn {
+  margin-left: 5px;
+}
+
+.chat-title {
+  font-size: 70px;
+  text-align: center;
+  border-style: dotted;
+  padding: 40px 20px;
+  margin: 50px;
+  background-color: darkgreen;
+  color: white;
+}
+
+.fancy-font {
+  font: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+}
+
+#current-room {
+  font-size: 40px;
+}
+
+#room-members {
+  padding: 10px 0px;
+  text-align: center;
+  border-style: groove;
+  list-style-type: none;
+}
+
+li.fancy-font {
+  font-size: 30px;
+}
+
+label.fancy-font {
+  font-size: 24px;
+}
+
+p.fancy-font {
+  font-size: 24px;
+}
+
+.list-heading {
+  font-size: 40px;
+  background-color: darkgreen;
+  text-align: center;
+  border-style: solid;
+  padding: 20px 0px;
+  color: white;
+}
+
+p {
+  font: 14 'Arizonia', Helvetica, sans-serif;
+  color: #2b2b2b;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+}
+
+.fireplace {
+  height: 500px;
+  width: 600px;
 }
