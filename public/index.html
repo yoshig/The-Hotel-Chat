@@ -22,12 +22,21 @@
     <div class="row">
       <div class="left-float col-xs-8">
         <div id="current-room" class="fancy-font"></div>
-        <div id="messages-board"></div>
+        <div class="smalltext" id="messages-board">
+          <p>Additional Commands<p>
+            <p>change your nickname: "/nick desired_nickname_here"</p>
+          <tr>
+            <p>change your chatroom: "/join room_name_here" </p>
+          </tr>
+        </table>
+        </div>
 
         <form action="" method="get" accept-charset="utf-8" id="chat-form">
           <label for="chatbox" class="fancy-font">Chat Box</label>
           <input type="text" name="chatbox" value="" id="chatbox">
           <input type="submit" class="chat-btn btn btn-primary btn-xs" value="&rarr;">
+                <p class="fancy-font commands">
+      </p>
         </form>
 
         <div id="username"></div>

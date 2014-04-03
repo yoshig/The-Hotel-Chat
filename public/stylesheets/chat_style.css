@@ -86,3 +86,7 @@ p {
   height: 500px;
   width: 600px;
 }
+
+.smalltext {
+  font-size: 14px
+}
