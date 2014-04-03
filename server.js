@@ -16,9 +16,7 @@ var staticServer = require('http').createServer(function (request, response) {
 
         file.serve(request, response);
     }).resume();
-}).listen(process.env.PORT || 8080, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
+}).listen(process.env.PORT || 8080);
 
 function handler (req, res) {
   fs.readFile(__dirname + '/index.html',
