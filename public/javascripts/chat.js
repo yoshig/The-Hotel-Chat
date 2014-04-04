@@ -21,6 +21,4 @@
       this.sendMessage(message);
     }
   };
-
-
 }(this));
