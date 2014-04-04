@@ -1,3 +1,4 @@
+require('newrelic');
 var static = require('node-static');
 var mime = require('mime');
 var http = require('http');
