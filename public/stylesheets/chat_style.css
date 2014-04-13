@@ -69,7 +69,16 @@ p.fancy-font {
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
-		1px 1px 0 #000; 
+		1px 1px 0 #000;
+}
+
+.room-style {
+	color: #5270C6;
+	text-shadow: 
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 #content {
@@ -136,4 +145,3 @@ p.fancy-font {
   transition: transform 0.5s ease;
   transform: scale(0.8);
 }
-
