@@ -19,14 +19,19 @@ $(function() {
   });
 
   socket.on("nicknameChangeResult", function(data) {
-    $('#username').html("<p class='fancy-font'>Le nickname: <span class='nickname'>" + data.newNickname + "</span></p>");
+		if (data.message) {
+			$('#messages-board').prepend('<p class="error-message">' + data.message + '</p>');
+			$('#username').html("<p class='fancy-font nickname'>Le nickname: <span class='nickname'>" + data.nickname + "</span></p>");
+		} else {
+	    $('#username').html("<p class='fancy-font nickname'>Le nickname: <span class='nickname'>" + data.newNickname + "</span></p>");
+		}
   })
 
   socket.on("roomChangeResult", function(data) {
-    $("#current-room").html("Welcome To: " + data.room);
+    $("#current-room").html("<span class='nickname'> Welcome To: " + data.room + '</span>');
     $("#room-members").html("");
     data.members.forEach(function(member) {
-      $("#room-members").prepend("<li class='fancy-font'>"+ member + "</li>")
+      $("#room-members").prepend("<li class='fancy-font in-chat'>"+ member + "</li>")
     })
   });
 
@@ -39,7 +44,7 @@ $(function() {
   socket.on("roomListUpdate", function(data) {
     $("#room-members").html("");
     data.members.forEach(function(member) {
-      $("#room-members").prepend("<li class='fancy-font'>"+ member + "</li>")
+      $("#room-members").prepend("<li class='fancy-font in-chat'>"+ member + "</li>")
     })
   });
 });
