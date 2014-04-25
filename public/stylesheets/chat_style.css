@@ -1,6 +1,7 @@
 body {
 	background: url('../images/HotelRoom.jpg') no-repeat;
 	background-size: cover;
+	overflow-x: hidden;
 }
 
 p {
@@ -91,7 +92,7 @@ p.fancy-font {
 
 #messages-board {
   height: 375px;
-  width: 800px;
+  width: 95%;
   background-color: lightgrey;
   border-style: inset;
   border-width: 2px;
