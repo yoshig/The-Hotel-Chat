@@ -1,3 +1,4 @@
+var newrelic = require('newrelic');
 var static = require('node-static');
 var mime = require('mime');
 var http = require('http');
@@ -16,7 +17,7 @@ var staticServer = require('http').createServer(function (request, response) {
 
         file.serve(request, response);
     }).resume();
-}).listen(8080);
+}).listen(process.env.PORT || 8080);
 
 function handler (req, res) {
   fs.readFile(__dirname + '/index.html',

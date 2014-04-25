@@ -128,7 +128,11 @@
 										<div class="col-xs-6">
 											<p><strong>Yoshi</strong> is an admirer of clean and clever code, no matter what language it's written in. He enjoys learning about algorithms, but not nearly as much as he loves chocolate and stouts (not necessarily together).</p>
 
+<<<<<<< HEAD
+											<p>Check out his personal website and porfolio, <a href="http://www.yoshigillaspie.com/" class="fancy-font">Here!</a></p>
+=======
 											<p>Check out his personal website and porfolio, <a href="http://www.yoshigillaspie.com" class="fancy-font">Here!</a></p>
+>>>>>>> upstream/master
 										</div>
 									</div>
 								</li>
